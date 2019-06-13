@@ -9,6 +9,28 @@
 
 /*HEADER*/
 
+
+@keyframes cambiar_filtro{
+	0%{
+		filter: grayscale(1)
+		}
+	25%{
+	filter: none;
+		}
+
+	50% {
+		filter: grayscale(1);
+		}
+	75%{
+	filter: none'
+		}
+	100%{
+	filter: grayscale(1)
+		}
+
+
+}
+
 header {
 	height: 92vh;
 	background: url(../Imagenes/header.jpg);
@@ -18,6 +40,11 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	animation-name: cambiar_filtro;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-delay: 1s; 
 }
 
 header h1,
@@ -31,6 +58,7 @@ header h1 span {
 	display: block;
 	text-align: center;
 	line-height: 100%;
+
 }
 
 /* NAV */
@@ -60,16 +88,23 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	color: plum;
+	color: red;
 }
 
+main{
+	background-image: url(../Imagenes/90563eb1cc5ee2d.jpg);
+	background-attachment: fixed;
+}
 /* INTEGRANTES */
 
 #integrantes {
 	padding: 50px 0;
 	height: 100vh;
+	width: 90vw;
+	margin: auto;
 	align-items: center;
 	align-content: center;
+	background: #fff;
 }
 
 #integrantes h2 {
@@ -82,19 +117,24 @@ nav ul li a:hover {
 	font-family: 'Permanent Marker', cursive;
 }
 
+.parrafo{
+	margin-top: 150px;
+}
+
 #integrantes p {
-	width: 50%;
-	margin: auto;
-	font-size: 18px;
+	width: 35vw;
+	margin: 40px;
+	margin-top: 50px;
+	font-size: 20px;
 	color: #333;
 	line-height: 150%;
-    margin-bottom: 20px;
-	text-align: center;
+    margin-bottom: 0px;
+	text-align: justify;
 	font-family: 'PT Sans Narrow', sans-serif;
 }
 
 #integrantes span{
-color: plum;
+color: red;
 font-family: 'Righteous', cursive;	
 }
 
@@ -102,18 +142,24 @@ font-family: 'Righteous', cursive;
 .fotos {
     position: relative;
     filter: grayscale(0.75);
-    display: block;
+	display: block;
+	float: right;
+	right: 50vw;
+	top: 10vh;
 }
+
+
 
 .fotos li {
 	position: absolute;
 	top: 0;
-    left: 50vh;
+	left: vh;
 	display: block;
 	border-color: #333;
 	border-style: solid;
 	border-width: 5px;
 	padding: 5px;
+	
 }
 
 .fotos .primera {
@@ -132,6 +178,8 @@ font-family: 'Righteous', cursive;
 	padding: 50px 0;
 	background: #333;
 	height: 100vh;
+	width: 90vw;
+	margin: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -162,7 +210,7 @@ font-family: 'Righteous', cursive;
 }
 
 #discografia ul li iframe{
-	border-color: plum;
+	border-color: red;
 	border-style: solid;
 	border-width: 5px;
 }
@@ -173,6 +221,8 @@ font-family: 'Righteous', cursive;
 #contacto {
 	background: rgb(27, 27, 27);
 	height: 80vh;
+	width: 90vw;
+	margin: auto;
 	padding: 50px 0;
 	display: flex;
 	flex-direction: column;
@@ -202,20 +252,61 @@ font-family: 'Righteous', cursive;
 	padding: 5px;
 	margin-bottom: 5px;
 	font-size: 20px;
-	color: plum;
+	color: red;
 	outline: none;
 	resize: none;
 }
-#contacto form #newsletter label {
+#contacto label {
 	color: #fff;
+	display: inline-block;
 }
+
+#newsletter{
+display: inline-block;
+}
+
 #contacto form input.enviar {
-	background: plum;
+	background: red;
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 1px;
 	cursor: pointer;
+}
+
+
+.fixed{
+	display: inline-block;
+	font-size: 50px;
+	padding: 10px 10px;
+	color:red;
+	background: black;
+	border-radius: 50px;
+
+	position: fixed;
+	right: 0px;
+	bottom: 50vh;
+	z-index: 3;
+}
+
+.fixed a{
+	position: relative;
+	z-index: 3;
+}
+.txt{
+	display: none;
+	font-family:  'Permanent Marker', cursive;
+	color:red;
+	font-size: 15px;
+	position: absolute;
+	right: 60px;
+	top: 15px;
+
+}
+
+.fixed a:hover .txt{
+	display: block;
+		
 }
 
 /*footer*/
@@ -234,7 +325,7 @@ footer ul li{
 }
 
 footer ul li a{
-	color: plum;
+	color: red;
 	padding: 10px;
 }
 

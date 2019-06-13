@@ -21,21 +21,23 @@
             <li><a href="#contacto">CONTACTO</a></li>
         </ul>
     </nav>    
-
+        <main>
     <section id="integrantes">
         <h2>INTEGRANTES</h2>
 
+        <ul class="fotos">
+                <li class="primera">
+                    <img src="Imagenes/daftpunkcascosok-02.jpg" alt="integrantes de daft punk con los cascos puestos" width="599"/> 
+                </li>
+                <li class="segunda">
+                    <img src="Imagenes/daftpunkcarasok-01.jpg" alt="integrantes de daft punk de jovenes sin los cascos puestos" width="599"/> 
+                </li>
+        </ul>
+        <article class="parrafo">
             <p><strong> <span> Daft Punk </span></strong> es un dúo musical formado por los músicos franceses <strong> <span> Guy-Manuel de Homem-Christo </span></strong> y <strong> <span> Thomas Bangalter </span></strong>.</p>
             <p><strong> <span> Daft Punk </span></strong> es reconocido por sus elaborados conciertos en los que incorporan efectos visuales, por el énfasis que ponen en la historia y los componentes visuales de sus producciones musicales. También porque desde 2001 en sus actuaciones o apariciones públicas aparecen disfrazados de robot.</p>
-
-        <ul class="fotos">
-            <li class="primera">
-                <img src="Imagenes/daftpunkcascosok-02.jpg" alt="integrantes de daft punk con los cascos puestos" width="599"/> 
-            </li>
-            <li class="segunda">
-                <img src="Imagenes/daftpunkcarasok-01.jpg" alt="integrantes de daft punk de jovenes sin los cascos puestos" width="599"/> 
-            </li>
-        </ul>
+        </article>
+   
     </section>
 
     <section id="discografia"> 
@@ -45,13 +47,13 @@
                     <iframe src="https://open.spotify.com/embed/album/5uRdvUR7xCnHmUW8n64n9y" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </li>
                 <li>
-                    <iframe src="https://open.spotify.com/embed/album/2noRn2Aes5aoNVsU6iWThc" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed/album/2noRn2Aes5aoNVsU6iWThc" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>     
                 </li>
                 <li>
                     <iframe src="https://open.spotify.com/embed/album/2T7DdrOvsqOqU9bGTkjBYu" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </li>
                 <li>
-                    <iframe src="https://open.spotify.com/embed/album/4m2880jivSbbyEGAKfITCa" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src="https://open.spotify.com/embed/album/4m2880jivSbbyEGAKfITCa" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>   
                 </li>
             </ul>    
             
@@ -62,11 +64,21 @@
             <form action="#">
 				<input type="text" name="nombre" placeholder="Tu nombre">
 				<input type="email" name="email" placeholder="Tu e-mail">
-				<textarea name="mensaje" placeholder="Te leemos" cols="30" rows="10"></textarea>
+                <textarea name="mensaje" placeholder="Te leemos" cols="30" rows="10"></textarea>
+                <input id="newsletter" type="checkbox" name="newsletter" checked> <label for="newsletter">Quiero recibir e-mails con novedades</label>
 				<input type="submit" value="Enviar" class="enviar">
             </form>
             
         </section>
+
+        <div class="fixed">
+            <a href="#home">
+                <span class="txt">HOME</span>
+                <span class="astro"><i class="fas fa-user-astronaut"></i></span>
+            </a>
+        </div>
+
+        </main>
         <footer>
             <ul>
                 <li>
