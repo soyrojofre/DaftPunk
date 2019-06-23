@@ -7,8 +7,10 @@
 	scroll-behavior: smooth;
 }
 
+/*
 /*HEADER*/
 
+@media screen and (min-width: 1025px){
 
 @keyframes cambiar_filtro{
 	0%{
@@ -329,9 +331,4 @@ footer ul li a{
 	color: red;
 	padding: 10px;
 }
-
-
-@media screen and (min-width: 769px) and (max-width: 1024px){
-    /*Media query para tablet*/
-
 }
