@@ -7,11 +7,11 @@
 	scroll-behavior: smooth;
 }
 
-/*
-/*HEADER*/
+/*PARA DESKTOP*/
 
 @media screen and (min-width: 1025px){
-
+	
+/*HEADER*/
 @keyframes cambiar_filtro{
 	0%{
 		filter: grayscale(1)
